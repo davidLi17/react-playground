@@ -1,9 +1,9 @@
 import { Files } from './PlaygroundContext'
-import importMap from './template/import-map.json?raw'
-import AppCss from './template/App.css?raw'
-import App from './template/App.tsx?raw'
-import main from './template/main.tsx?raw'
-import { fileName2Language } from './utils'
+import importMap from '@/ReactPlayground/template/import-map.json?raw'
+import AppCss from '@/ReactPlayground/template/App.css?raw'
+import App from '@/ReactPlayground/template/App.tsx?raw'
+import main from '@/ReactPlayground/template/main.tsx?raw'
+import { fileName2Language } from '@/ReactPlayground/utils'
 
 // app 文件名
 export const APP_COMPONENT_FILE_NAME = 'App.tsx'
