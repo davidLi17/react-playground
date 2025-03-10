@@ -23,6 +23,7 @@ export default function Editor(props: Props) {
 		monaco.languages.typescript.typescriptDefaults.setCompilerOptions({
 			jsx: monaco.languages.typescript.JsxEmit.Preserve,
 			esModuleInterop: true,
+			allowImportingTsExtensions: true, //配置允许tsx文件进行导入.
 		});
 
 		editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter, () => {

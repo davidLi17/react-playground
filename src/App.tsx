@@ -1,13 +1,14 @@
-import ReactPlayground from "./ReactPlayground/index";
+import { RouterProvider } from "react-router-dom";
 import "./App.scss";
 import { PlaygroundProvider } from "./ReactPlayground/PlaygroundContext";
 import { ThemeProvider } from "./ReactPlayground/ThemeContext";
+import router from "./router";
 
 function App() {
 	return (
 		<ThemeProvider>
 			<PlaygroundProvider>
-				<ReactPlayground />
+				<RouterProvider router={router} />
 			</PlaygroundProvider>
 		</ThemeProvider>
 	);
