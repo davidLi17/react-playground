@@ -6,7 +6,7 @@ import Preview from "./components/Preview";
 
 export default function ReactPlayground() {
 	return (
-		<div style={{ height: "100vh" }}>
+		<div style={{ height: "90vh" }}>
 			<Header />
 			<Allotment defaultSizes={[100, 100]}>
 				<Allotment.Pane minSize={0}>

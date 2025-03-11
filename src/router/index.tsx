@@ -1,11 +1,18 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Outlet } from "react-router-dom";
 import type { RouteObject, DOMRouterOpts } from "react-router-dom";
 import ExamMonitoring from "@/CameraRecoder/index";
 import ReactPlayground from "@/ReactPlayground/index";
 import NotFound from "./components/NotFound";
+import Navigation from "./components/Navigation";
 const router = createBrowserRouter([
 	{
 		path: "/",
+		element: (
+			<>
+				<Navigation />
+				<Outlet />
+			</>
+		),
 		children: [
 			{
 				path: "/",
